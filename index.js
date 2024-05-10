@@ -27,7 +27,8 @@ password.value = gereratePassword(plength.value, initialPassword);
 function gereratePassword(plength , initialPassword){
     let pass = "";
     for(let i=0; i<plength; i++){
-        pass += charAt(Math.floor(Math.random() * initialPassword.length))
+        pass += initialPassword.charAt(Math.floor(Math.random() * initialPassword.length));
+
       
     }
   return pass;
