@@ -1,0 +1,73 @@
+:root{
+    --primary-background: purple;
+    --inputColor:#ff0000;
+    --text-color:#fff;
+    --buttonBg: #ff0000;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    align-items: center;
+
+a{
+    text-decoration: none;
+}
+
+.container-box {
+    width:500px;
+    background: var(--primary-background);
+    padding: 30px;
+}
+.p-header{
+    display: flex;
+    gap: 5px;
+}
+.p-header input{
+    width: 100%;
+    border: 0;
+    background-color: var(--inputColor);
+    color: var(--text-color);
+    padding: 10px 15px;
+    outline: none;
+}
+.p-header button{
+    cursor: pointer;
+}
+
+.form_field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px  solid #fff;
+    align-items: center;
+}
+.form_field label{
+    color: var(--text-color);
+}
+.p-body .form_field:first-child{
+    margin-top: 10px;
+}
+.buttons{
+    text-align: center;
+}
+button#generatePass {
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 15px;
+    padding: 12px 0px;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--buttonBg);
+}
+
+.container-box h2{
+    text-align: center;
+    color: var(--text-color);
+}
